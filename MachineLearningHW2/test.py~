@@ -1,0 +1,14 @@
+import os,sys
+
+
+print "current working directory:%s"%os.getcwd() 
+
+fd=os.open("/home/bo/Desktop/MachineLearningHW2/trainingDigits",os.O_RDONLY)
+
+os.fchdir(fd)
+
+print "current working directory:%s"%os.getcwd() 
+
+os.close(fd)
+
+
